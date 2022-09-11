@@ -19,11 +19,11 @@
             <form action="" method="get" class="form0">
             <div class="form1">
                 <div class="field">
-                    <label for="firstname">First Name</label>
+                    <label for="firstname" class="text1">First Name</label>
                     <input pattern="[a-zA-Z\s]+" oninvalid="setCustomValidity('Please enter a name. (only alphabets)')" type="text" id = "firstname" name="firstname" placeholder="John" required>
                 </div>
                 <div class="field">
-                    <label for="lastname">Last Name</label>
+                    <label for="lastname" class="text1">Last Name</label>
                     <input pattern="[a-zA-Z\s]+" oninvalid="setCustomValidity('Please enter a name. (only alphabets)')" type="text" id = "lastname" name="lastname" placeholder="Tan" required>
                 </div>
                 <div class="field">
@@ -31,15 +31,15 @@
                     <input type="email" id = "firstname" name="firstname" required>
                 </div>
                 <div class="field">
-                    <label for="number">Phone Number</label>
+                    <label for="number" class="text1">Phone Number</label>
                     <input type="tel" id = "number" name="number" minlength=8 required>
                 </div>
                 <div class="field">
-                    <label for="password">Password</label>
+                    <label for="password" class="text1">Password</label>
                     <input type="password" id = "password" name="password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}" oninvalid="setCustomValidity('Requires an upper case, lower case and number. At least 8 characters long.')" required>
                 </div>
                 <div class="field">
-                    <label for="password1">Confirm password</label>
+                    <label for="password1" class="text1">Confirm password</label>
                     <input type="password" id = "password1" name="password1" required>
                 </div>
             </div>

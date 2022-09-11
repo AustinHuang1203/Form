@@ -8,6 +8,49 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-	<script src="index.js"></script>
+    <div class="page">
+        <div class = "left_background">
+            <div class="filler1"></div>
+            <div class="header1"><img src="images/logo.svg" width=auto height=200px >Music</div>
+        </div>
+
+        <div class = "right_background">
+            <div class="header2">This is a sign up form! Fill in your details below to sign up for a subscription!</div>
+            <form action="" method="get" class="form0">
+            <div class="form1">
+                <div class="field">
+                    <label for="firstname">First Name</label>
+                    <input pattern="[a-z,A-Z\s]+" oninvalid="setCustomValidity('Please enter a name. (only alphabets)')" type="text" id = "firstname" name="firstname" placeholder="John" required>
+                </div>
+                <div class="field">
+                    <label for="lastname">Last Name</label>
+                    <input pattern="[a-z,A-Z\s]+" oninvalid="setCustomValidity('Please enter a name. (only alphabets)')" type="text" id = "lastname" name="lastname" placeholder="Tan" required>
+                </div>
+                <div class="field">
+                    <label for="email" class="text1">Email</label>
+                    <input type="email" id = "firstname" name="firstname" required>
+                </div>
+                <div class="field">
+                    <label for="number">Phone Number</label>
+                    <input type="tel" id = "number" name="number" required>
+                </div>
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" id = "password" name="password" required>
+                </div>
+                <div class="field">
+                    <label for="password1">Confirm password</label>
+                    <input type="password" id = "password1" name="password1" required>
+                </div>
+            </div>
+            <button type="submit"></button>
+            </form>
+
+        </div>
+    </div>
+
+
+
+	<script src="code.js"></script>
   </body>
 </html>

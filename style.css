@@ -54,6 +54,7 @@ body{
 
 .header2{
     display:flex;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     text-align:center;
     justify-content:center;
     align-content:center;
@@ -104,6 +105,31 @@ body{
 .text1{
     display:flex;
     width:100%;
+}
+.submit1{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    width:100%;
+    height:350px;
+    background-color:rgb(128, 128, 128, 0.3);
+}
+
+.submit2{
+    width:200px;
+    height:70px;
+    margin-top:40px;
+    border: 4px solid green;
+    background-color:transparent;
+    color:darkgreen;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size:2rem;
+}
+
+.submit2:focus{
+    background-color:blue;
 }
 
 input {

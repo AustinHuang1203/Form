@@ -6,6 +6,9 @@ pwd.addEventListener("keyup",check);
 const pwd1 = document.getElementById("password1");
 pwd1.addEventListener("mouseout",check);
 pwd1.addEventListener("keyup",check);
+const submit1 = document.getElementById("submit2");
+submit1.addEventListener("mouseover",style1);
+submit1.addEventListener("mouseout",style2);
 
 let stored = ""
 function store(){
@@ -21,3 +24,12 @@ function check(){
     }
 }
 
+function style1(){
+    submit1.style.backgroundColor="green";
+    submit1.style.color="white";
+}
+
+function style2(){
+    submit1.style.backgroundColor="transparent";
+    submit1.style.color="green";
+}

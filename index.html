@@ -20,11 +20,11 @@
             <div class="form1">
                 <div class="field">
                     <label for="firstname">First Name</label>
-                    <input pattern="[a-z,A-Z\s]+" oninvalid="setCustomValidity('Please enter a name. (only alphabets)')" type="text" id = "firstname" name="firstname" placeholder="John" required>
+                    <input pattern="[a-zA-Z\s]+" oninvalid="setCustomValidity('Please enter a name. (only alphabets)')" type="text" id = "firstname" name="firstname" placeholder="John" required>
                 </div>
                 <div class="field">
                     <label for="lastname">Last Name</label>
-                    <input pattern="[a-z,A-Z\s]+" oninvalid="setCustomValidity('Please enter a name. (only alphabets)')" type="text" id = "lastname" name="lastname" placeholder="Tan" required>
+                    <input pattern="[a-zA-Z\s]+" oninvalid="setCustomValidity('Please enter a name. (only alphabets)')" type="text" id = "lastname" name="lastname" placeholder="Tan" required>
                 </div>
                 <div class="field">
                     <label for="email" class="text1">Email</label>
@@ -32,11 +32,11 @@
                 </div>
                 <div class="field">
                     <label for="number">Phone Number</label>
-                    <input type="tel" id = "number" name="number" required>
+                    <input type="tel" id = "number" name="number" minlength=8 required>
                 </div>
                 <div class="field">
                     <label for="password">Password</label>
-                    <input type="password" id = "password" name="password" required>
+                    <input type="password" id = "password" name="password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}" oninvalid="setCustomValidity('Requires an upper case, lower case and number. At least 8 characters long.')" required>
                 </div>
                 <div class="field">
                     <label for="password1">Confirm password</label>
